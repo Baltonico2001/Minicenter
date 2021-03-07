@@ -1,0 +1,46 @@
+<div class="container p-6">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+        {{#each id}}
+            <div class="card"> 
+                <div class="card-bady">
+                    <form action="/parqueadero/modificar/{{id}}" method="post">
+                        <div class="form-group">
+                            <label for=""> M O D I F I C A R</label>
+
+                        </div>CLIENTE
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="cliente" value="{{cliente}}">
+
+                        </div>VEHICULO
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="vehiculo" value="{{vehiculo}}">
+                         
+                        </div>PLACAS
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="placas" value="{{placas}}">
+
+                        </div>HORA ENTRADA
+                        <div class="form-group">
+                            <input class="form-control" type="time" name="hora_entrada" value="{{hora_entrada}}">
+                         
+
+                        </div>HORA SALIDA
+                        <div class="form-group">
+                            <input class="form-control" type="time" name="hora_salida" value="{{hora_salida}}">
+
+                        </div>TOTAL
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="total" value="{{total}}">
+                         
+                        <div class="form-group">
+                            <button  type="submit" class="btn btn-success btn-block" >G U A R D A R</button>
+
+        {{/each }}
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

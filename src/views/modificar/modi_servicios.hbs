@@ -1,0 +1,48 @@
+<div class="container p-6">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+        {{#each id}}
+            <div class="card"> 
+                <div class="card-bady">
+                    <form action="/servicios/modificar/{{id}}" method="post">
+                        <div class="form-group">
+                            <label for=""> M O D I F I C A R</label>
+
+
+                        </div>FECHA
+                        <div class="form-group">
+                            <input class="form-control" type="date" name="fecha" value="{{fecha}}">
+
+                        </div>ENERGIA
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="energia" value="{{energia}}">
+
+                        </div>AGUA
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="agua" value="{{agua}}">
+                         
+                        </div>GAS
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="gas" value="{{gas}}">
+
+                        </div>INTERNET
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="internet" value="{{internet}}">
+                         
+
+                        </div>CAMARAS
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="camaras" value="{{camaras}}">
+
+                         
+                        <div class="form-group">
+                            <button  type="submit" class="btn btn-success btn-block" >G U A R D A R</button>
+
+        {{/each }}
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

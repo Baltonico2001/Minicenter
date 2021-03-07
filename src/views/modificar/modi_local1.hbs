@@ -1,0 +1,43 @@
+<div class="container p-6">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+        {{#each id}}
+            <div class="card"> 
+                <div class="card-bady">
+                    <form action="locales/modificar/{{id}}" method="post">
+                        <div class="form-group">
+                            <label for=""> M O D I F I C A R</label>
+
+                        </div>FECHA
+                        <div class="form-group">
+                            <input class="form-control" type="data" name="fecha" value="{{fecha}}">
+
+                        </div>ARRENDATARIO
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="descripcion" value="{{	descripcion}}">
+                        </div>TELEFONO
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="telefono" value="{{telefono}}">
+
+                        </div>OCUPA LOCAL EN 
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="ocupacion_local" value="{{	ocupacion_local}}">
+                        </div>OBSERVACIONES
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="observaciones" value="{{observaciones}}">
+
+                        </div>PAGO
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="pago" value="{{pago}}">                            
+                         
+                        <div class="form-group">
+                            <button  type="submit" class="btn btn-success btn-block" >G U A R D A R</button>
+                        </div>
+        {{/each }}
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

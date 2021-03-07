@@ -1,0 +1,27 @@
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+        {{#each id}}
+            <div class="card"> 
+                <div class="card-bady">
+                    <form action="/editar-produ/{{id}}" method="post">
+                        <div class="form-group">
+                            <label for=""> M O D I F I C A R</label>
+
+                        </div>TITULO
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="titulo" value="{{titulo}}">
+
+                        </div>DESCRIPCION
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="descripcion" value="{{descripcion}}">
+
+        {{/each }}
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
